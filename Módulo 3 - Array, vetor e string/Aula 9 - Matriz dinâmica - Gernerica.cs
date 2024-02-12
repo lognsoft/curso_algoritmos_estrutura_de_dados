@@ -1,15 +1,32 @@
 namespace ConsoleApp7;
 
-public class MatrizDinamica
+public class MatrizDinamica <T>
 {
 	public int Count { get; set; }
-	public int[] Vetor { get; set; } = new int[2];
+	private T[] Vetor { get; set; } = new T[2];
 
-	public void Add(int item)
+	public T this[int index]
+	{
+		get { return Vetor[index]; }
+		set
+		{
+			if (index >= 0 && index < Count)
+			{
+				Vetor[index] = value;
+			}
+			else
+			{
+				throw new ArgumentException("item nao encontrado no vetor");
+			}
+		}
+	}
+	
+	
+	public void Add(T item)
 	{
 		if (Count == Vetor.Length)
 		{
-			int[] tempVet = new int[Count * 2];
+			T[] tempVet = new T[Count * 2];
 
 			for (int i = 0; i < Vetor.Length; i++)
 			{
@@ -21,7 +38,7 @@ public class MatrizDinamica
 		Count++;
 	}
 
-	public int Get(int pos)
+	public T Get(int pos)
 	{
 		if (pos >= 0 && pos <= Count)
 		{
@@ -46,7 +63,7 @@ public class MatrizDinamica
 		}
 	}
 
-	public void Edit(int pos, int value)
+	/*public void Edit(int pos, T value)
 	{
 		if (pos >= 0 && pos <= Count)
 		{
@@ -57,5 +74,5 @@ public class MatrizDinamica
 			throw new ArgumentException("item nao encontrado no vetor");
 		}
 	}
-	
+	*/
 }
