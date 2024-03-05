@@ -41,12 +41,11 @@ void ON2()
 			passos++;
 			if (s1[i] == s2[t])
 			{
-				if (s1[i] == s2[t])
-				{
-					ultima = t + 1;
-					c++;
-					break;
-				}
+
+				ultima = t + 1;
+				c++;
+				break;
+				
 			}
 		}
 	}
