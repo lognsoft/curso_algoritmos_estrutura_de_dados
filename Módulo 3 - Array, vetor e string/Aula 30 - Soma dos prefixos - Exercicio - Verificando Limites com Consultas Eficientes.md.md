@@ -1,4 +1,4 @@
-# Desafio de Programação: Soma de Subarrays
+# Desafio de Programação: Verificando Limites com Consultas Eficientes
 
 ## Objetivo
 
