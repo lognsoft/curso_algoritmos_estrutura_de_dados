@@ -32,35 +32,53 @@ Desenvolver um programa que analise um array de inteiros e determine se a soma d
 ## Exemplo de Implementação em C#
 
 ```csharp
-int[] nums = new int[]{ 4, 8, 5, 9, 1, 3 };
-int[] prefix = new int[nums.Length];
+int[] nums = new int[]{4,8,5,9,1,3};
+
+int[] prefixo = new int[nums.Length];
+
+int limit = 15;
+
 int[,] queriesArray = new int[,]
 {
-    { 0, 2 }, 
-    { 1, 4 }, 
+    { 0, 2 },
+    { 1, 4 },
     { 3, 5 }
 };
-bool[] resultBools = new bool[queriesArray.GetLength(0)];
-int target = 13;
 
-// Construção do array de prefixos
-prefix[0] = nums[0];
+bool[] resBools = new bool[queriesArray.GetLength(0)];
+
+prefixo[0] = nums[0];
+
 for (int i = 1; i < nums.Length; i++)
 {
-    prefix[i] = nums[i] + prefix[i - 1];
+    prefixo[i] = nums[i] + prefixo[i - 1];
 }
 
-// Processamento de cada consulta
+
+//Console.WriteLine(queriesArray.GetLength(0));
+
 for (int i = 0; i < queriesArray.GetLength(0); i++)
 {
     int inicio = queriesArray[i, 0];
     int fim = queriesArray[i, 1];
-    int res = inicio == 0 ? prefix[fim] : prefix[fim] - prefix[inicio - 1];
-    resultBools[i] = res < target;
+
+    int res = 0;
+
+    if (inicio == 0)
+    {
+        res = prefixo[fim];
+    }
+    else
+    {
+        res = prefixo[fim] - prefixo[inicio - 1];
+    }
+
+    resBools[i] = res < limit;
+
+    Console.WriteLine(res);
 }
 
-// Exibição dos resultados
-for (int i = 0; i < resultBools.Length; i++)
+for (int i = 0; i < resBools.Length; i++)
 {
-    Console.WriteLine(resultBools[i]);
+    Console.WriteLine(resBools[i]);
 }
