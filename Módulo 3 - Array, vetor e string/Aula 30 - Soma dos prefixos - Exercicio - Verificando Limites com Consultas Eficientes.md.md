@@ -28,7 +28,7 @@ Desenvolver um programa que analise um array de inteiros e determine se a soma d
 ## Exemplo de Implementação em C#
 
 ```csharp
-int[] nums = new int[]{ 4, 8, 5, 9, 1, 3 };
+/*int[] nums = new int[]{ 4, 8, 5, 9, 1, 3 };
 int[] prefix = new int[nums.Length];
 int[,] queriesArray = new int[,]
 {
@@ -59,4 +59,4 @@ for (int i = 0; i < queriesArray.GetLength(0); i++)
 for (int i = 0; i < resultBools.Length; i++)
 {
     Console.WriteLine(resultBools[i]);
-}
+}*/
