@@ -7,7 +7,11 @@ Desenvolver um programa que analise um array de inteiros e determine se a soma d
 ## Dados de Entrada
 
 - **Array de Inteiros (`nums`)**: Um array de números inteiros. Por exemplo, `[4, 8, 5, 9, 1, 3]`.
-- **Consultas (`queries`)**: Uma matriz de consultas onde cada consulta é um par `[x, y]`. Esses pares representam os índices inicial e final dos subconjuntos do array `nums` cuja soma precisa ser calculada.
+- **Consultas (`queries`)**: Uma matriz de consultas onde cada consulta é representada por um par `[x, y]`. Estes pares indicam os índices inicial e final de subconjuntos do array `nums` cuja soma precisa ser calculada. A matriz é definida como:
+  ```plaintext
+  [[0, 2],
+   [1, 4],
+   [3, 5]]
 - **Limite (`limit`)**: Um número inteiro que serve como o limite máximo para as somas dos subarrays. Por exemplo, `13`.
 
 ## Processo
