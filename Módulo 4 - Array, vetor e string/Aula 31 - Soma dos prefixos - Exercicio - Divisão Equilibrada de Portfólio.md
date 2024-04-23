@@ -66,4 +66,4 @@ Este exemplo ilustra a importância de examinar todas as divisões possíveis pa
 
 ### Importante
 
-Complexidade deve ser ** O(n) **
+Complexidade deve ser **O(n)**
