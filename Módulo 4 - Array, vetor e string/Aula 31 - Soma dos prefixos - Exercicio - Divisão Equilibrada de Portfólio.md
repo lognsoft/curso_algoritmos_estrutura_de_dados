@@ -22,6 +22,7 @@ Descobrir quantas divisões do array `nums`, que representa retornos de ativos e
 
 ```plaintext
 nums = [2, 2, 5, 10, 3]
+```
 
 ## Explicação Detalhada
 
