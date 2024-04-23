@@ -21,7 +21,7 @@ Descobrir quantas divisões do array `nums`, que representa retornos de ativos e
 ### Entrada
 
 ```plaintext
-nums = [2, 2, 5, 10, 3]
+portifolio = [3, 4, 6, 2, 7]
 ```
 
 ## Explicação Detalhada
