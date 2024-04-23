@@ -63,3 +63,7 @@ Para o vetor fornecido `[3, 4, 6, 2, 7]`, existem duas divisões válidas onde a
 ### Conclusão
 
 Este exemplo ilustra a importância de examinar todas as divisões possíveis para encontrar aquelas que atendem ao critério de ter a soma dos retornos na primeira parte maior que na segunda. A análise passo a passo ajuda a identificar as configurações válidas do portfólio.
+
+### Importante
+
+Complexidade deve ser O(n)
