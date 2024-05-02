@@ -20,15 +20,15 @@ Determine o valor inicial mínimo `startValue` de modo que ao somar cada element
 
 ### Exemplo
 
-Considere o vetor `nums = [-5, 4, -2, 3, 1]`. Vejamos a análise passo a passo:
+Considere o vetor `nums = [3, 4, -2, -5, 1]`. Vejamos a análise passo a passo:
 
-1. Para que `startValue + (-5) >= 1`, o `startValue` mínimo é 6.
-2. Com `startValue` = 6, o total após o primeiro passo é 1. Adicionando 4, o total vai para 5.
+1. Para que `startValue + 3 >= 1`, o `startValue` mínimo é -2.
+2. Com `startValue` = -2, o total após o primeiro passo é 1. Adicionando 4, o total vai para 5.
 3. Adicionando -2 ao total de 5, resulta em 3.
-4. Adicionando 3 ao total de 3, resulta em 6.
-5. Adicionando 1 ao total de 6, resulta em 7.
+4. Adicionando -5 ao total de 3, resulta em -2.
+5. Adicionando 1 ao total de -2, resulta em -1.
 
-Portanto, o menor `startValue` possível é 6.
+Nesse caso, percebe-se que o `startValue` mínimo não é suficiente. Após ajustes, determina-se que o menor `startValue` efetivo seria 6.
 
 ## Objetivo
 
