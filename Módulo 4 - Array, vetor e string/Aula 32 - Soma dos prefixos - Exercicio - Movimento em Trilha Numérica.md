@@ -8,5 +8,8 @@
 3. Caso a soma acumulada em qualquer etapa seja menor que 1, o `startValue` atual não é suficiente.
 4. O objetivo é encontrar o menor `startValue` que impede que a soma total seja menor que 1 em qualquer ponto do processo.
 
+## Entrada:
+[3, 4, -2, -7, 1]
+
 ## Objetivo:
 Encontre o valor mínimo positivo para `startValue` que assegure que a soma total, ao adicionar sequencialmente os elementos de `nums`, nunca fique abaixo de 1.
