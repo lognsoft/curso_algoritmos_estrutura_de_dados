@@ -1,6 +1,6 @@
 # Encontrando o Valor Inicial Mínimo para Manter a Soma Positiva
 
-**Problema:** Você tem uma lista de números inteiros chamada `nums`. Seu objetivo é determinar um valor inicial, denominado `startValue`, que será somado aos elementos da lista `nums` de forma sequencial (da esquerda para a direita). O desafio é descobrir qual o menor valor positivo para `startValue` para que, a cada passo da soma, o resultado nunca seja menor que 1.
+**Problema:** Você tem uma lista de números inteiros chamada `nums`. Seu objetivo é determinar um valor inicial, denominado `startValue` sendo um número positivo, que será somado aos elementos da lista `nums` de forma sequencial (da esquerda para a direita). O desafio é descobrir qual o menor valor positivo para `startValue` para que, a cada passo da soma, o resultado nunca seja menor que 1.
 
 ## Instruções:
 1. Inicie com um `startValue` e o primeiro elemento de `nums`.
