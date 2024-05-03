@@ -13,3 +13,35 @@
 
 ## Objetivo:
 Encontre o valor mínimo positivo para `valorInicial` que assegure que a soma total, ao adicionar sequencialmente os elementos de `nums`, nunca fique abaixo de 1.
+
+```csharp
+int[] nums = new int[]{ 3, 4, -2, -7, 1 };
+int[] prefixo = new int[nums.Length];
+
+prefixo[0] = nums[0];
+
+int menor = prefixo[0];
+for (int i = 1; i < nums.Length; i++)
+{
+    prefixo[i] = nums[i] + prefixo[i - 1];
+
+    if (prefixo[i] < menor)
+    {
+        menor = prefixo[i];
+    }
+}
+
+if (menor < 0)
+{
+    prefixo[0] += -menor + 1;
+}
+
+for (int i = 1; i < nums.Length; i++)
+{
+    prefixo[i] = nums[i] + prefixo[i - 1];
+}
+
+for (int i = 0; i < prefixo.Length; i++)
+{
+    Console.WriteLine(prefixo[i]);
+}
