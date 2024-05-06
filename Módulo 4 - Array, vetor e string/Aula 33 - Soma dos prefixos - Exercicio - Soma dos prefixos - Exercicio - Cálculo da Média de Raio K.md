@@ -13,16 +13,18 @@ A média de `x` elementos é a soma dos `x` elementos dividida por `x`, usando d
 **Entrada:**
 
 ```C#
-nums = [7, 4, 3, 9, 1, 8, 5, 2, 6], k = 3
+nums = [6, 2, 5, 8, 1, 9, 3, 4, 7], k = 2
 
-//Saida
-[-1, -1, -1, 5, 4, 4, -1, -1, -1]
+//Saída
+[-1, -1, 5, 5, 6, 4, 5, -1, -1]
 ```
 **Explicação:**
 
-- `avgs[0]`, `avgs[1]`, e `avgs[2]` são `-1` porque há menos de `k` elementos antes de cada índice.
-- A soma do subarray centrado no índice `3` com raio `3` é: `7 + 4 + 3 + 9 + 1 + 8 + 5 = 37`.
-- Usando divisão inteira, `avgs[3] = 37 / 7 = 5`.
-- Para o subarray centrado no índice `4`, `avgs[4] = (4 + 3 + 9 + 1 + 8 + 5 + 2) / 7 = 4`.
-- Para o subarray centrado no índice `5`, `avgs[5] = (3 + 9 + 1 + 8 + 5 + 2 + 6) / 7 = 4`.
-- `avgs[6]`, `avgs[7]`, e `avgs[8]` são `-1` porque há menos de `k` elementos após cada índice.
+- avgs[0] e avgs[1] são -1 porque há menos de k elementos antes de cada índice.
+- A soma do subarray centrado no índice 2 com raio 2 é: 6 + 2 + 5 + 8 + 1 = 22.
+- Usando divisão inteira, avgs[2] = 22 / 5 = 4.
+- Para o subarray centrado no índice 3, avgs[3] = (2 + 5 + 8 + 1 + 9) / 5 = 5.
+- Para o subarray centrado no índice 4, avgs[4] = (5 + 8 + 1 + 9 + 3) / 5 = 5.
+- Para o subarray centrado no índice 5, avgs[5] = (8 + 1 + 9 + 3 + 4) / 5 = 5.
+- Para o subarray centrado no índice 6, avgs[6] = (1 + 9 + 3 + 4 + 7) / 5 = 4.
+- avgs[7] e avgs[8] são -1 porque há menos de k elementos após cada índice.
