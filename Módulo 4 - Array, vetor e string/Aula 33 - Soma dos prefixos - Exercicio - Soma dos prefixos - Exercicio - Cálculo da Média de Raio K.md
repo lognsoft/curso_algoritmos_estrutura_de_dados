@@ -19,7 +19,7 @@ nums = [7, 4, 3, 9, 1, 8, 5, 2, 6], k = 3
 
 //Saida
 [-1, -1, -1, 5, 4, 4, -1, -1, -1]
-
+```
 **Explicação:**
 
 - `avgs[0]`, `avgs[1]`, e `avgs[2]` são `-1` porque há menos de `k` elementos antes de cada índice.
