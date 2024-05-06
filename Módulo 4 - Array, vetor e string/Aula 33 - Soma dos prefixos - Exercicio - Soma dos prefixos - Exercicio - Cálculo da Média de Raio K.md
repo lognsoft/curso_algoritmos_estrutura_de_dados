@@ -8,9 +8,7 @@ Construa e retorne um array `avgs` de comprimento `n` onde `avgs[i]` é a média
 
 A média de `x` elementos é a soma dos `x` elementos dividida por `x`, usando divisão inteira. A divisão inteira trunca em direção a zero, o que significa perder a parte fracional.
 
-## Exemplos
-
-### Exemplo 1:
+### Exemplo
 
 **Entrada:**
 
