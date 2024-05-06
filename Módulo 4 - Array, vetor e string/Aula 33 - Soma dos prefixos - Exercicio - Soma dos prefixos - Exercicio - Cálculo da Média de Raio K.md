@@ -13,14 +13,17 @@ A média de `x` elementos é a soma dos `x` elementos dividida por `x`, usando d
 **Entrada:**
 
 ```C#
-nums = [6, 2, 5, 8, 1], k = 2
+nums = [6, 2, 5, 8, 1], k = 1
 
 //Saída
-[-1, -1, 4, -1, -1]
+[-1, 4, 5, 5, -1]
 ```
 **Explicação:**
 
-- avgs[0] e avgs[1] são -1 porque há menos de k elementos antes de cada índice.
-- A soma do subarray centrado no índice 2 com raio 2 é: 6 + 2 + 5 + 8 + 1 = 22.
-- Usando divisão inteira, avgs[2] = 22 / 5 = 4.
-- avgs[3] e avgs[4] são -1 porque há menos de k elementos após cada índice.
+- **`avgs[0]` e `avgs[4]` são `-1`** porque há menos de `k` elementos antes ou após cada índice respectivamente.
+- A soma do subarray centrado no índice `1` com raio `1` é: `6 + 2 + 5 = 13`.
+- Usando divisão inteira, **`avgs[1] = 13 / 3 = 4`**.
+- A soma do subarray centrado no índice `2` com raio `1` é: `2 + 5 + 8 = 15`.
+- Usando divisão inteira, **`avgs[2] = 15 / 3 = 5`**.
+- A soma do subarray centrado no índice `3` com raio `1` é: `5 + 8 + 1 = 14`.
+- Usando divisão inteira, **`avgs[3] = 14 / 3 = 4`**.
