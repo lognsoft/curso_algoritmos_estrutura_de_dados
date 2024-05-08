@@ -16,7 +16,7 @@ A média de `x` elementos é a soma dos `x` elementos dividida por `x`, usando d
 nums = [6, 2, 5, 8, 1], k = 1
 
 //Saída
-[-1, 4, 5, 5, -1]
+[-1, 4,33, 5, 4,66, -1]
 ```
 **Explicação:**
 
