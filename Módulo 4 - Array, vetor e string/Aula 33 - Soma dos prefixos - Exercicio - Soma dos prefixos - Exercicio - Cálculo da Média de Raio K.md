@@ -22,8 +22,8 @@ nums = [6, 2, 5, 8, 1], k = 1
 
 - **`medias[0]` e `medias[4]` são `-1`** porque há menos de `k` elementos antes ou após cada índice respectivamente.
 - A soma do subarray centrado no índice `1` com raio `1` é: `6 + 2 + 5 = 13`.
-- Usando divisão inteira, **`medias[1] = 13 / 3 = 4`**.
+- Usando divisão inteira, **`medias[1] = 13 / 3 = 4,33`**.
 - A soma do subarray centrado no índice `2` com raio `1` é: `2 + 5 + 8 = 15`.
 - Usando divisão inteira, **`medias[2] = 15 / 3 = 5`**.
 - A soma do subarray centrado no índice `3` com raio `1` é: `5 + 8 + 1 = 14`.
-- Usando divisão inteira, **`medias[3] = 14 / 3 = 4`**.
+- Usando divisão inteira, **`medias[3] = 14 / 3 = 4,66`**.
