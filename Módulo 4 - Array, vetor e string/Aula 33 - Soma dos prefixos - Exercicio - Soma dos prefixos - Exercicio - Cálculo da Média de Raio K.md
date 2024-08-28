@@ -27,3 +27,43 @@ nums = [6, 2, 5, 8, 1], k = 1
 - Usando divisão inteira, **`medias[2] = 15 / 3 = 5`**.
 - A soma do subarray centrado no índice `3` com raio `1` é: `5 + 8 + 1 = 14`.
 - Usando divisão inteira, **`medias[3] = 14 / 3 = 4,66`**.
+
+```C#
+
+int[] nums = new int[] { 6, 2, 5, 8, 1 };
+int k = 1; // Define o alcance de k elementos à esquerda e à direita para a média
+
+// Cria o array de soma dos prefixos
+int[] prefix = new int[nums.Length];
+prefix[0] = nums[0];
+for (int i = 1; i < nums.Length; i++)
+{
+    prefix[i] = prefix[i - 1] + nums[i];
+}
+
+// Array para armazenar as médias dos subarrays
+int[] medias = new int[nums.Length];
+
+for (int i = 0; i < nums.Length; i++)
+{
+    int left = i - k;
+    int right = i + k;
+
+    if (left < 0 || right >= nums.Length)
+    {
+        // Se não existem elementos suficientes antes ou depois, a média é -1
+        medias[i] = -1;
+    }
+    else
+    {
+        // Calcula a soma do subarray usando a soma dos prefixos
+        int soma = prefix[right] - (left > 0 ? prefix[left - 1] : 0);
+        // Calcula a média usando divisão inteira
+        medias[i] = soma / (2 * k + 1);
+    }
+}
+
+// Impressão das médias calculadas
+Console.WriteLine(string.Join(", ", medias));
+
+```C#
