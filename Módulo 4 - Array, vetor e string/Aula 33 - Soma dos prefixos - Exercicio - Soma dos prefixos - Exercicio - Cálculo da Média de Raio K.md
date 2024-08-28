@@ -66,5 +66,3 @@ for (int i = 0; i < nums.Length; i++)
 
 // Impressão das médias calculadas
 Console.WriteLine(string.Join(", ", medias));
-
-```C#
