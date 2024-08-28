@@ -28,7 +28,7 @@ nums = [6, 2, 5, 8, 1], k = 1
 - A soma do subarray centrado no índice `3` com raio `1` é: `5 + 8 + 1 = 14`.
 - Usando divisão inteira, **`medias[3] = 14 / 3 = 4,66`**.
 
-**Solução**
+### Solução
 ```C#
 
 int[] nums = new int[] { 6, 2, 5, 8, 1 };
