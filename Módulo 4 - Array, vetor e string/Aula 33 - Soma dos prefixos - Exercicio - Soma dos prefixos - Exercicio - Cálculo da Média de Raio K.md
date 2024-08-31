@@ -6,7 +6,7 @@ A média de raio `k` para um subarray de `nums` centrado em algum índice `i` co
 
 Construa e retorne um array `medias` de comprimento `n` onde `medias[i]` é a média de raio `k` para o subarray centrado no índice `i`.
 
-A média de `x` elementos é a soma dos `x` elementos dividida por `x`, usando divisão inteira. A divisão inteira trunca em direção a zero, o que significa perder a parte fracional.
+A média de `x` elementos é a soma dos `x` elementos dividida por `x`, usando divisão inteira.
 
 ### Exemplo
 
